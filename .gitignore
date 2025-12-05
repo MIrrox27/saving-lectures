@@ -26,7 +26,9 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-config.config
+code/config.config
+.venv1
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

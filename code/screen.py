@@ -1,7 +1,11 @@
 import subprocess, logging
+#from config import readDataConfigs, readWindowsConfigs
+from pathlib import Path
 
-def start_recording():
-    ffmpeg_path = r"C:\ffmpeg\bin\ffmpeg.exe"
+
+
+def start_recording(ffmpeg_path: Path):
+
     cmd = [
         ffmpeg_path,
         "ffmpeg",
