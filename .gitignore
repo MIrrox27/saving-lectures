@@ -3,8 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+.idea/
 .idea
 .mp4
+
 # C extensions
 *.so
 
