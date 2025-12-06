@@ -5,7 +5,8 @@ from pathlib import Path
 
 def readDataConfigs(path: str):
     configs = ConfigParser()
-    configs.read(f'{path}')
+    configs.read(f'{path}', encoding='utf-8')
+
 
     url = configs.get('data', 'url')
     timer = 60 * (configs.getint('data', 'timer')) # получаем в минутах
@@ -16,7 +17,7 @@ def readDataConfigs(path: str):
 
 def readWindowsConfigs(path: str):
     configs = ConfigParser()
-    configs.read(f'{path}')
+    configs.read(f'{path}', encoding='utf-8')
 
     ffmpeg_exe = Path(configs.get('windows', 'ffmpeg_exe'))
     folder_with_lectures = Path(configs.get('windows', 'folder_with_lectures'))

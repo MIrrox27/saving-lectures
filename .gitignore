@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 .idea
+.mp4
 # C extensions
 *.so
 
